@@ -1,99 +1,129 @@
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.common-V2-ndk.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.gatekeeper-V1-ndk.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.health-V2-ndk.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.health@1.0.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.health@2.0.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.secure_element-V1-ndk.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.secure_element@1.0.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.secure_element@1.1.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.secure_element@1.2.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.security.keymint-V1-ndk.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.security.rkp-V3-ndk.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.hardware.weaver-V2-ndk.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.wifi-V4-ndk.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.wifi.supplicant-V1-ndk.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/android.hardware.wifi.supplicant-V5-ndk.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.system.keystore2-V1-ndk.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/android.system.wifi.keystore@1.0.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/ese_weaver.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/hw'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libGPMTEEC_vendor.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libGPQeSE.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libGPTEE_vendor.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libGPreqcancel.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libGPreqcancel_svc.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libQSEEComAPI.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/lib_android_keymaster_keymint_utils.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libagmdevice.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libagmmixer.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libcld80211.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libconfigdb.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libcppcose_rkp.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdiag.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdisplayconfig.qti.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdrm.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdrmfs.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdrmtime.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdsi_netctrl.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libdsutils.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libesesbprovision.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libgpt.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libidl.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libjc_keymint_nxp.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libjc_keymint_transport_nxp.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libjson.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libkeymaster_messages.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libkeymaster_portable.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libkeymasterdeviceutils.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libkeymasterprovision.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libkeymasterutils.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/liblowi_wifihal.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libmdmdetect.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libmemunreachable.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libminkdescriptor.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libminksocket_vendor.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libmisight.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libnetutils.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libnicm.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libnicm_dsi.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libnicm_utils.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libops.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libpasn.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libperipheral_client.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqcbor.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqdi.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqdutils.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqisl.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_cci.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_client_helper.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_client_qmux.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_common_so.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_csi.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmi_encdec.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmiextservices.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqmiservices.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqrtr.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqservice.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqtikeymaster4.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libqtikeymint.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/librecovery_updater.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/librecovery_updater_msm.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/librpmb.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libsoc_helper.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libspcom.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libspl.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libssd.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/libtaautoload.so': No such file or directory
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libtime_genoff.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libvmmem.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libwifi-hal-ctrl.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libwifi-hal-qcom.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libwifi-hal.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libwifi-system-iface.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libwifiobserver.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/libxml.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/vendor.display.config@1.0.so'?
-mv: overwrite '/home/zara/twrp_device_tree_peridot/recovery/root/vendor/lib64/vendor.display.config@2.0.so'?
-mv: cannot stat '/home/zara/mumba/vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so': No such file or directory
-mv: cannot stat '/home/zara/mumba/vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so': No such file or directory
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Default Volume Tables included by Audio Policy Configuration file -->
+<!-- Full Default Volume table for all device category -->
+<volumes>
+    <reference name="FULL_SCALE_VOLUME_CURVE">
+    <!-- Full Scale reference Volume Curve -->
+        <point>0,0</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="SILENT_VOLUME_CURVE">
+        <point>0,-9600</point>
+        <point>100,-9600</point>
+    </reference>
+    <reference name="DEFAULT_SYSTEM_VOLUME_CURVE">
+    <!-- Default System reference Volume Curve -->
+        <point>1,-2400</point>
+        <point>33,-1800</point>
+        <point>66,-1200</point>
+        <point>100,-600</point>
+    </reference>
+    <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
+    <!-- Default Media reference Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">
+    <!--Default Volume Curve -->
+        <point>1,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
+    <!-- Default is Speaker Media Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE">
+    <!--Default Volume Curve -->
+        <point>1,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE">
+    <!-- Default is Ext Media System Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-2100</point>
+        <point>100,-1000</point>
+    </reference>
+    <reference name="DEFAULT_HEARING_AID_VOLUME_CURVE">
+    <!-- Default Hearing Aid Volume Curve -->
+        <point>1,-12700</point>
+        <point>20,-8000</point>
+        <point>60,-4000</point>
+        <point>100,0</point>
+    </reference>
+    <!-- **************************************************************** -->
+    <!-- Non-mutable default volume curves:                               -->
+    <!--     * first point is always for index 0                          -->
+    <!--     * attenuation is small enough that stream can still be heard -->
+    <reference name="DEFAULT_NON_MUTABLE_VOLUME_CURVE">
+    <!-- Default non-mutable reference Volume Curve -->
+    <!--        based on DEFAULT_MEDIA_VOLUME_CURVE -->
+        <point>0,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_NON_MUTABLE_HEADSET_VOLUME_CURVE">
+    <!--Default non-mutable Volume Curve for headset -->
+    <!--    based on DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE -->
+        <point>0,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_NON_MUTABLE_SPEAKER_VOLUME_CURVE">
+    <!-- Default non-mutable Speaker Volume Curve -->
+    <!--    based on DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE -->
+        <point>0,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_NON_MUTABLE_EARPIECE_VOLUME_CURVE">
+    <!--Default non-mutable Volume Curve -->
+    <!--    based on DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE -->
+        <point>0,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_NON_MUTABLE_EXT_VOLUME_CURVE">
+    <!-- Default non-mutable Ext Media System Volume Curve -->
+    <!--     based on DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE -->
+        <point>0,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-2100</point>
+        <point>100,-1000</point>
+    </reference>
+    <reference name="DEFAULT_NON_MUTABLE_HEARING_AID_VOLUME_CURVE">
+    <!-- Default non-mutable Hearing Aid Volume Curve -->
+    <!--     based on DEFAULT_HEARING_AID_VOLUME_CURVE -->
+        <point>0,-12700</point>
+        <point>20,-8000</point>
+        <point>60,-4000</point>
+        <point>100,0</point>
+    </reference>
+</volumes>
