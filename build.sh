@@ -6,7 +6,9 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 
 rm -rf device/motorola/mumba
 rm -rf vendor/motorola/mumba
-rm -rf device/motorola/mumba-kernel
+rm -rf kernel/motorola/sm6435-devicetrees
+rm -rf kernel/motorola/sm6435-modules
+rm -rf kernel/motorola/sm6435
 rm -rf hardware/motorola
 
 git clone https://github.com/motorola-sm6435/android_device_motorola_mumba -b lineage-23.2 device/motorola/mumba
