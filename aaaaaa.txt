@@ -1,310 +1,119 @@
-msm_sysstats.ko
-msm_show_resume_irq.ko
-mhi.ko
-mhi_dev_uci.ko
-mhi_dev_dtr.ko
-pinctrl-spmi-gpio.ko
-pinctrl-spmi-mpp.ko
-pwm-qti-lpg.ko
-pci-msm-drv.ko
-qcom-spmi-wled.ko
-camcc-sm4450.ko
-debugcc-sm4450.ko
-debugcc-parrot.ko
-camcc-parrot.ko
-gpucc-sm4450.ko
-gpucc-parrot.ko
-videocc-parrot.ko
-bam_dma.ko
-msm_gpi.ko
-qcom_cpuss_sleep_stats.ko
-pdr_interface.ko
-qmi_helpers.ko
-heap_mem_ext_v01.ko
-msm_memshare.ko
-smp2p.ko
-smp2p_sleepstate.ko
-qsee_ipc_irq_bridge.ko
-qcom_soc_wdt.ko
-qcom_stats.ko
-eud.ko
-boot_stats.ko
-rq_stats.ko
-tmecom-intf.ko
-qcom_va_minidump.ko
-qcom_logbuf_vendor_hooks.ko
-qcom_logbuf_boot_log.ko
-gic_intr_routing.ko
-hung_task_enh.ko
-memlat.ko
-bwmon.ko
-cpucp_log.ko
-sys_pm_vx.ko
-sps_drv.ko
-qcom_ramdump.ko
-sysmon_subsystem_stats.ko
-cdsprm.ko
-panel_event_notifier.ko
-qti_pmic_glink.ko
-altmode-glink.ko
-qti_battery_debug.ko
-charger-ulog-glink.ko
-pmic-glink-debug.ko
-pmic-pon-log.ko
-dmesg_dumper.ko
-gh_tlmm_vm_mem_access.ko
-qfprom-sys.ko
-msm_performance.ko
-fsa4480-i2c.ko
-qti-fixed-regulator.ko
-qcom_pm8008-regulator.ko
-qcom-amoled-regulator.ko
-qpnp-lcdb-regulator.ko
-qti-ocp-notifier.ko
-hvc_gunyah.ko
-msm_geni_serial.ko
-rdbg.ko
-qcom_iommu_debug.ko
-drm_dp_aux_bus.ko
-drm_display_helper.ko
-qseecom_proxy.ko
-qcom-i2c-pmic.ko
-sg.ko
-spi-msm-geni.ko
-spmi-pmic-arb-debug.ko
-msm_sharedmem.ko
-phy-generic.ko
-phy-qcom-emu.ko
-phy-msm-ssusb-qmp.ko
-phy-msm-snps-hs.ko
-dwc3-msm.ko
-xhci-sideband.ko
-ehset.ko
-lvstest.ko
-f_fs_ipc_log.ko
-usb_f_cdev.ko
-usb_f_ccid.ko
-usb_f_qdss.ko
-usb_f_gsi.ko
-ucsi_qti_glink.ko
-pm8941-pwrkey.ko
-qcom-hv-haptics.ko
-i2c-msm-geni.ko
-qcom-pon.ko
-reboot-mode.ko
-qti_battery_charger.ko
-schgm-flash.ko
-qcom-spmi-adc-tm5.ko
-qcom-spmi-temp-alarm.ko
-qti_qmi_sensor_v2.ko
-qti_qmi_cdev.ko
-policy_engine.ko
-bcl_soc.ko
-qti_userspace_cdev.ko
-ddr_cdev.ko
-qti_cpufreq_cdev.ko
-thermal_config.ko
-sdpm_clk.ko
-qti_devfreq_cdev.ko
-qcom-cpufreq-hw.ko
-qcom_lpm.ko
-leds-aw2016.ko
-leds-qpnp-flash-v2.ko
-leds-qpnp-vibrator-ldo.ko
-leds-qti-tri-led.ko
-si_core_module.ko
-mem_object.ko
-qcom_pil_info.ko
-rproc_qcom_common.ko
-qcom_q6v5.ko
-qcom_q6v5_pas.ko
-qcom_sysmon.ko
-qcom_glink.ko
-qcom_glink_smem.ko
-qcom_smd.ko
-glink_pkt.ko
-gh_ctrl.ko
-gh_irq_lend.ko
-gh_rm_booster.ko
-gh_mem_notifier.ko
-gh_panic_notifier.ko
-governor_msm_adreno_tz.ko
-governor_gpubw_mon.ko
-qcom-spmi-adc5.ko
-qcom-vadc-common.ko
-qti-glink-adc.ko
-slimbus.ko
-slim-qcom-ngd-ctrl.ko
-coresight.ko
-coresight-tmc.ko
-coresight-funnel.ko
-coresight-replicator.ko
-coresight-stm.ko
-coresight-cti.ko
-coresight-tpdm.ko
-coresight-tpda.ko
-coresight-tgu.ko
-coresight-csr.ko
-coresight-dummy.ko
-coresight-remote-etm.ko
-coresight-tmc-sec.ko
-coresight-qmi.ko
-stm_core.ko
-stm_p_basic.ko
-stm_p_ost.ko
-stm_console.ko
-stm_ftrace.ko
-snd-usb-audio-qmi.ko
-cfg80211.ko
-qrtr-smd.ko
-qrtr-mhi.ko
-qca_cld3_adrastea.ko
-icnss2.ko
-wlan_firmware_service.ko
-cnss_nl.ko
-cnss_prealloc.ko
-cnss_utils.ko
-q6_notifier_dlkm.ko
-spf_core_dlkm.ko
-audpkt_ion_dlkm.ko
-gpr_dlkm.ko
-audio_pkt_dlkm.ko
-q6_dlkm.ko
-adsp_loader_dlkm.ko
-audio_prm_dlkm.ko
-q6_pdr_dlkm.ko
-pinctrl_lpi_dlkm.ko
-swr_dlkm.ko
-swr_ctrl_dlkm.ko
-snd_event_dlkm.ko
-wcd_core_dlkm.ko
-mbhc_dlkm.ko
-swr_dmic_dlkm.ko
-wcd9xxx_dlkm.ko
-swr_haptics_dlkm.ko
-stub_dlkm.ko
-wsa881x_dlkm.ko
-machine_dlkm.ko
-lpass_cdc_wsa2_macro_dlkm.ko
-lpass_cdc_wsa_macro_dlkm.ko
-lpass_cdc_va_macro_dlkm.ko
-lpass_cdc_rx_macro_dlkm.ko
-lpass_cdc_tx_macro_dlkm.ko
-lpass_cdc_dlkm.ko
-wsa883x_dlkm.ko
-wcd938x_dlkm.ko
-wcd938x_slave_dlkm.ko
-wcd937x_dlkm.ko
-wcd937x_slave_dlkm.ko
-fs1815_dlkm.ko
-fs1815_mngr_dlkm.ko
-hdmi_dlkm.ko
-qcedev-mod_dlkm.ko
-qcrypto-msm_dlkm.ko
-qce50_dlkm.ko
-qrng_dlkm.ko
-hdcp_qseecom_dlkm.ko
-smmu_proxy_dlkm.ko
-smcinvoke_dlkm.ko
-tz_log_dlkm.ko
-q6_notifier_dlkm.ko
-spf_core_dlkm.ko
-audpkt_ion_dlkm.ko
-gpr_dlkm.ko
-audio_pkt_dlkm.ko
-q6_dlkm.ko
-adsp_loader_dlkm.ko
-audio_prm_dlkm.ko
-q6_pdr_dlkm.ko
-pinctrl_lpi_dlkm.ko
-swr_dlkm.ko
-swr_ctrl_dlkm.ko
-snd_event_dlkm.ko
-wcd_core_dlkm.ko
-mbhc_dlkm.ko
-swr_dmic_dlkm.ko
-wcd9xxx_dlkm.ko
-swr_haptics_dlkm.ko
-stub_dlkm.ko
-wsa881x_dlkm.ko
-machine_dlkm.ko
-lpass_cdc_wsa2_macro_dlkm.ko
-lpass_cdc_wsa_macro_dlkm.ko
-lpass_cdc_va_macro_dlkm.ko
-lpass_cdc_rx_macro_dlkm.ko
-lpass_cdc_tx_macro_dlkm.ko
-lpass_cdc_dlkm.ko
-wsa883x_dlkm.ko
-wcd938x_dlkm.ko
-wcd938x_slave_dlkm.ko
-wcd937x_dlkm.ko
-wcd937x_slave_dlkm.ko
-fs1815_dlkm.ko
-fs1815_mngr_dlkm.ko
-hdmi_dlkm.ko
-btpower.ko
-radio-i2c-rtc6226-qca.ko
-bt_fm_slim.ko
-camera.ko
-gsim.ko
-ipam.ko
-ipanetm.ko
-rmnet_core.ko
-rmnet_ctl.ko
-rmnet_offload.ko
-rmnet_perf_tether.ko
-rmnet_perf.ko
-rmnet_wlan.ko
-rmnet_mem.ko
-rmnet_shs.ko
-rmnet_aps.ko
-rmnet_sch.ko
-rmnet_wlan.ko
-msm_drm.ko
-frpc-adsprpc.ko
-msm_ext_display.ko
-sync_fence.ko
-msm-mmrm.ko
-mmrm_test_module.ko
-nxp-nci.ko
-qcedev-mod_dlkm.ko
-qcrypto-msm_dlkm.ko
-qce50_dlkm.ko
-qrng_dlkm.ko
-hdcp_qseecom_dlkm.ko
-smmu_proxy_dlkm.ko
-smcinvoke_dlkm.ko
-tz_log_dlkm.ko
-qseecom_dlkm.ko
-msm_video.ko
-utags.ko
-mmi_annotate.ko
-mmi_info.ko
-bm_adsp_ulog.ko
-mmi_charger.ko
-moto_f_usbnet.ko
-moto_reboot_reason.ko
-watchdogtest.ko
-mmi_relay.ko
-sensors_class.ko
-awinic_sar.ko
-sx937x_sar.ko
-st54spi.ko
-st21nfc.ko
-chipone_tddi_v3_mmi.ko
-ilitek_v4_mmi.ko
-qti_glink_charger.ko
-qpnp_adaptive_charge.ko
-mmi_sys_temp.ko
-leds_aw99703.ko
-ktd3136_bl.ko
-fm_ctrl.ko
-fpc1020_mmi.ko
-anc_fps_mmi.ko
-moto_mmap_fault.ko
-moto_mm.ko
-moto_swap.ko
-moto_sched.ko
-con_dfpar.ko
-moto_binder.ko
-msm_kgsl.ko
+# DTB / DTBO
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
+TARGET_NEEDS_DTBOIMAGE := true
+TARGET_MERGE_DTBS_WILDCARD ?= parrot*base
+
+# Init Boot
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+# Kernel
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_KERNEL_CMDLINE += \
+    console=ttynull \
+    nosoftlockup \
+    printk.devkmsg=on \
+    firmware_class.path=/vendor/firmware_mnt/image \
+    qcom_geni_serial.con_enabled=0
+
+BOARD_BOOTCONFIG += \
+    androidboot.hardware=qcom \
+    androidboot.load_modules_parallel=true \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.vendor.qspa=true
+
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+TARGET_KERNEL_VERSION := 6.6
+TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_SOURCE := kernel/motorola/sm6435
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/parrot_perf.config \
+    vendor/ext_config/moto-parrot.config \
+    vendor/ext_config/moto-parrot-mumba.config
+
+# Kernel Modules
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load.system_dlkm))
+BOARD_SYSTEM_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.systemdlkm_blocklist.msm.parrot
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load.vendor_boot))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load.recovery))
+
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+SYSTEM_KERNEL_MODULES := $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)
+
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/motorola/sm7435-modules
+
+TARGET_KERNEL_EXT_MODULES := \
+    qcom/opensource/mmrm-driver \
+    qcom/opensource/mm-drivers/msm_ext_display \
+    qcom/opensource/mm-drivers/sync_fence \
+    qcom/opensource/audio-kernel \
+    qcom/opensource/securemsm-kernel \
+    qcom/opensource/synx-kernel \
+    qcom/opensource/camera-kernel \
+    qcom/opensource/data-kernel/drivers/smem-mailbox \
+    qcom/opensource/datarmnet-ext/mem \
+    qcom/opensource/dataipa/drivers/platform/msm \
+    qcom/opensource/datarmnet/core \
+    qcom/opensource/datarmnet-ext/aps \
+    qcom/opensource/datarmnet-ext/offload \
+    qcom/opensource/datarmnet-ext/perf \
+    qcom/opensource/datarmnet-ext/perf_tether \
+    qcom/opensource/datarmnet-ext/sch \
+    qcom/opensource/datarmnet-ext/shs \
+    qcom/opensource/datarmnet-ext/wlan \
+    qcom/opensource/display-drivers/msm \
+    qcom/opensource/dsp-kernel \
+    qcom/opensource/graphics-kernel \
+    qcom/opensource/spu-kernel \
+    qcom/opensource/touch-drivers \
+    qcom/opensource/video-driver \
+    qcom/opensource/wlan/platform \
+    qcom/opensource/wlan/qcacld-3.0/.adrastea \
+    qcom/opensource/wlan/qcacld-3.0/.qca6490 \
+    qcom/opensource/wlan/qcacld-3.0/.qca6750 \
+    qcom/opensource/bt-kernel \
+    nxp/opensource/driver \
+    st/opensource/driver
+
+TARGET_KERNEL_EXT_MODULES += \
+    motorola/drivers/mmi_annotate \
+    motorola/drivers/mmi_info \
+    motorola/drivers/backlight/aw99703 \
+    motorola/drivers/backlight/ktd3136 \
+    motorola/drivers/power/bm_adsp_ulog \
+    motorola/drivers/power/mmi_charger \
+    motorola/drivers/power/qti_glink_charger \
+    motorola/drivers/power/qpnp_adaptive_charge \
+    motorola/drivers/misc/utag \
+    motorola/drivers/sensors \
+    motorola/drivers/misc/stk501xx \
+    motorola/drivers/misc/mmi_stow \
+    motorola/drivers/mmi_relay \
+    motorola/drivers/moto_netopt/con_dfpar \
+    motorola/drivers/misc/hall \
+    motorola/drivers/misc/mmi_sys_temp \
+    motorola/drivers/misc/sx937x \
+    motorola/drivers/regulator/dio8015 \
+    motorola/drivers/regulator/wl2866d \
+    motorola/drivers/input/touchscreen/touchscreen_mmi \
+    motorola/drivers/input/touchscreen/focaltech_0flash_v2_mmi \
+    motorola/drivers/input/touchscreen/ili9882_mmi \
+    motorola/drivers/input/touchscreen/goodix_berlin_mmi \
+    motorola/drivers/input/misc/anc_fps_mmi \
+    motorola/drivers/input/misc/fpc_fps_mmi \
+    motorola/drivers/input/misc/goodix_fod_mmi \
+    motorola/drivers/input/misc/rbs_fod_mmi \
+    motorola/drivers/wlan_antenna
