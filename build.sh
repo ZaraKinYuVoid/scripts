@@ -8,6 +8,7 @@ rm -rf device/motorola/mumba
 rm -rf vendor/motorola/mumba
 rm -rf device/motorola/mumba-kernel
 rm -rf hardware/motorola
+rm -rf hardware/dolby
 
 git clone https://github.com/motorola-sm6435/android_device_motorola_mumba device/motorola/mumba
 git clone https://github.com/motorola-sm6435/android_vendor_motorola_mumba vendor/motorola/mumba
