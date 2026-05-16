@@ -19,4 +19,4 @@
 
 ## Device Picture
 
-![Motorola Moto G57 power](https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQohTkWh8veTZQxvVjilPHkLHTmaCviHPA3hG_DjivHjkOgmOxL9_XLzhmKWkq-RSG8rfw5OzWbXSkdJSOM1UJmbNOc6oM1Gw)
+![Motorola Moto G57 power](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g57-power-1.jpg)
