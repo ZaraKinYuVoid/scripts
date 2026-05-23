@@ -1,0 +1,39 @@
+zaraknyu@DESKTOP-E35KJB8:~/android_kernel_sony_sm6475-modules$ rg "sde_drm.h"
+qcom/opensource/display-drivers/Android.bp
+7:    "display/drm/sde_drm.h",
+
+qcom/opensource/display-drivers/msm/sde/sde_hw_util.c
+8:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/msm_drv.h
+49:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/dp/dp_panel.h
+10:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_encoder_phys_wb.c
+9:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_hw_dnsc_blur.h
+10:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_hw_mdss.h
+13:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/dp/dp_display.h
+11:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/dp/dp_catalog.h
+16:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_plane.c
+24:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_crtc.c
+24:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/msm/sde/sde_wb.c
+9:#include <drm/sde_drm.h>
+
+qcom/opensource/display-drivers/include/uapi/display/drm/Kbuild
+4:header-y += sde_drm.h
