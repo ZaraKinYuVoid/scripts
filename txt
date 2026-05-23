@@ -1,4 +1,4 @@
-zaraknyu@DESKTOP-E35KJB8:~/android_kernel_sony_sm6475-modules$ rg "sde_drm.h"
+araknyu@DESKTOP-E35KJB8:~/android_kernel_motorola_sm6435-modules$ rg "sde_drm.h"
 qcom/opensource/display-drivers/Android.bp
 7:    "display/drm/sde_drm.h",
 
@@ -6,7 +6,7 @@ qcom/opensource/display-drivers/msm/sde/sde_hw_util.c
 8:#include <drm/sde_drm.h>
 
 qcom/opensource/display-drivers/msm/msm_drv.h
-49:#include <drm/sde_drm.h>
+50:#include <drm/sde_drm.h>
 
 qcom/opensource/display-drivers/msm/dp/dp_panel.h
 10:#include <drm/sde_drm.h>
@@ -37,3 +37,4 @@ qcom/opensource/display-drivers/msm/sde/sde_wb.c
 
 qcom/opensource/display-drivers/include/uapi/display/drm/Kbuild
 4:header-y += sde_drm.h
+zaraknyu@DESKTOP-E35KJB8:~/android_kernel_motorola_sm6435-modules$
