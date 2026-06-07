@@ -1,251 +1,631 @@
-gh_arm_drv.ko
-sched-walt.ko
-qcom_ipc_logging.ko
-qcom-pdc.ko
-phy-qcom-ufs.ko
-phy-qcom-ufs-qmp-v4-waipio.ko
-phy-qcom-ufs-qrbtc-sdm845.ko
-pinctrl-msm.ko
-pinctrl-ravelin.ko
-pinctrl-parrot.ko
-clk-qcom.ko
-clk-dummy.ko
-gdsc-regulator.ko
-clk-rpmh.ko
-dispcc-sm4450.ko
-dispcc-parrot.ko
-gcc-sm4450.ko
-gcc-parrot.ko
-qcom_aoss.ko
-cmd-db.ko
-mdt_loader.ko
-qcom_rpmh.ko
-smem.ko
-socinfo.ko
-cpu_phys_log_map.ko
-dcc_v2.ko
-qcom_wdt_core.ko
-memory_dump_v2.ko
-minidump.ko
-qcom_ice.ko
-qcom-pmu-lib.ko
-dcvs_fp.ko
-qcom-dcvs.ko
-qcom_cpucp.ko
-mem_buf.ko
-mem_buf_dev.ko
-mem_buf_msgq.ko
-secure_buffer.ko
-qcom_cpu_vendor_hooks.ko
-debug_symbol.ko
-proxy-consumer.ko
-rpmh-regulator.ko
-stub-regulator.ko
-debug-regulator.ko
-arm_smmu.ko
-msm_dma_iommu_mapping.ko
-qcom_iommu_util.ko
-iommu-logger.ko
-qti-regmap-debugfs.ko
-qcom-spmi-pmic.ko
-qcom_dma_heaps.ko
-spmi-pmic-arb.ko
-qpnp-power-on.ko
-rtc-pm8xxx.ko
-qcom-dload-mode.ko
-qcom-reboot-reason.ko
-qti_thermal_vendor_hooks.ko
-qcom_tsens.ko
-bcl_pmic5.ko
-cpu_hotplug.ko
-thermal_pause.ko
-sdhci-msm.ko
-cqhci.ko
-ufs-qcom.ko
-ufshcd-crypto-qti.ko
-qcom-scm.ko
-qcom-ipcc.ko
-msm_qmp.ko
-qcom_hwspinlock.ko
-gh_virt_wdt.ko
-gh_dbl.ko
-gh_msgq.ko
-gh_rm_drv.ko
-gunyah_loader.ko
-nvmem_qfprom.ko
-nvmem_qcom-spmi-sdam.ko
-icc-bcm-voter.ko
-icc-rpmh.ko
-qnoc-parrot.ko
-qnoc-ravelin.ko
-qnoc-qos.ko
-icc-debug.ko
-qrtr.ko
-qrtr-gunyah.ko
-msm_sysstats.ko
-msm_show_resume_irq.ko
-mhi.ko
-mhi_dev_uci.ko
-mhi_dev_dtr.ko
-pinctrl-spmi-gpio.ko
-pinctrl-spmi-mpp.ko
-pwm-qti-lpg.ko
-pci-msm-drv.ko
-qcom-spmi-wled.ko
-camcc-sm4450.ko
-debugcc-sm4450.ko
-debugcc-parrot.ko
-camcc-parrot.ko
-gpucc-sm4450.ko
-gpucc-parrot.ko
-videocc-parrot.ko
-bam_dma.ko
-msm_gpi.ko
-qcom_cpuss_sleep_stats.ko
-pdr_interface.ko
-qmi_helpers.ko
-heap_mem_ext_v01.ko
-msm_memshare.ko
-smp2p.ko
-smp2p_sleepstate.ko
-qsee_ipc_irq_bridge.ko
-qcom_soc_wdt.ko
-qcom_stats.ko
-eud.ko
-boot_stats.ko
-rq_stats.ko
-tmecom-intf.ko
-qcom_va_minidump.ko
-qcom_logbuf_vendor_hooks.ko
-qcom_logbuf_boot_log.ko
-gic_intr_routing.ko
-hung_task_enh.ko
-memlat.ko
-bwmon.ko
-cpucp_log.ko
-sys_pm_vx.ko
-sps_drv.ko
-qcom_ramdump.ko
-sysmon_subsystem_stats.ko
-cdsprm.ko
-panel_event_notifier.ko
-qti_pmic_glink.ko
-altmode-glink.ko
-qti_battery_debug.ko
-charger-ulog-glink.ko
-pmic-glink-debug.ko
-pmic-pon-log.ko
-dmesg_dumper.ko
-gh_tlmm_vm_mem_access.ko
-qfprom-sys.ko
-msm_performance.ko
-fsa4480-i2c.ko
-qti-fixed-regulator.ko
-qcom_pm8008-regulator.ko
-qcom-amoled-regulator.ko
-qpnp-lcdb-regulator.ko
-qti-ocp-notifier.ko
-hvc_gunyah.ko
-msm_geni_serial.ko
-rdbg.ko
-qcom_iommu_debug.ko
-drm_dp_aux_bus.ko
-drm_display_helper.ko
-qseecom_proxy.ko
-qcom-i2c-pmic.ko
-sg.ko
-spi-msm-geni.ko
-spmi-pmic-arb-debug.ko
-msm_sharedmem.ko
-phy-generic.ko
-phy-qcom-emu.ko
-phy-msm-ssusb-qmp.ko
-phy-msm-snps-hs.ko
-dwc3-msm.ko
-xhci-sideband.ko
-ehset.ko
-lvstest.ko
-f_fs_ipc_log.ko
-usb_f_cdev.ko
-usb_f_ccid.ko
-usb_f_qdss.ko
-usb_f_gsi.ko
-ucsi_qti_glink.ko
-pm8941-pwrkey.ko
-qcom-hv-haptics.ko
-i2c-msm-geni.ko
-qcom-pon.ko
-reboot-mode.ko
-qti_battery_charger.ko
-schgm-flash.ko
-qcom-spmi-adc-tm5.ko
-qcom-spmi-temp-alarm.ko
-qti_qmi_sensor_v2.ko
-qti_qmi_cdev.ko
-policy_engine.ko
-bcl_soc.ko
-qti_userspace_cdev.ko
-ddr_cdev.ko
-qti_cpufreq_cdev.ko
-thermal_config.ko
-sdpm_clk.ko
-qti_devfreq_cdev.ko
-qcom-cpufreq-hw.ko
-qcom_lpm.ko
-leds-aw2016.ko
-leds-qpnp-flash-v2.ko
-leds-qpnp-vibrator-ldo.ko
-leds-qti-tri-led.ko
-si_core_module.ko
-mem_object.ko
-qcom_pil_info.ko
-rproc_qcom_common.ko
-qcom_q6v5.ko
-qcom_q6v5_pas.ko
-qcom_sysmon.ko
-qcom_glink.ko
-qcom_glink_smem.ko
-qcom_smd.ko
-glink_pkt.ko
-gh_ctrl.ko
-gh_irq_lend.ko
-gh_rm_booster.ko
-gh_mem_notifier.ko
-gh_panic_notifier.ko
-governor_msm_adreno_tz.ko
-governor_gpubw_mon.ko
-qcom-spmi-adc5.ko
-qcom-vadc-common.ko
-qti-glink-adc.ko
-slimbus.ko
-slim-qcom-ngd-ctrl.ko
-coresight.ko
-coresight-tmc.ko
-coresight-funnel.ko
-coresight-replicator.ko
-coresight-stm.ko
-coresight-cti.ko
-coresight-tpdm.ko
-coresight-tpda.ko
-coresight-tgu.ko
-coresight-csr.ko
-coresight-dummy.ko
-coresight-remote-etm.ko
-coresight-tmc-sec.ko
-coresight-qmi.ko
-stm_core.ko
-stm_p_basic.ko
-stm_p_ost.ko
-stm_console.ko
-stm_ftrace.ko
-snd-usb-audio-qmi.ko
-qrtr-smd.ko
-qrtr-mhi.ko
-smcinvoke_dlkm.ko
-hdcp_qseecom_dlkm.ko
-msm_drm.ko
-msm_ext_display.ko
-sync_fence.ko
-msm-mmrm.ko
-smcinvoke_dlkm.ko
-qseecom_dlkm.ko
+{
+  "Nodes": [
+    {
+      "Name": "CPULittleClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
+      "Values": [
+        "9999999",
+        "1708800",
+        "576000",
+        "300000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPULittleClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
+      "Values": [
+        "9999999",
+        "1708800",
+        "1324800",
+        "1113600",
+        "691200",
+        "576000",
+        "300000"
+      ],
+      "DefaultIndex": 6,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPULittleClusterUpRateLimit",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us",
+      "Values": [
+        "0",
+        "500",
+        "2000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPULittleClusterDownRateLimit",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us",
+      "Values": [
+        "20000",
+        "2000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
+      "Values": [
+        "9999999",
+        "2054400",
+        "1900800",
+        "1516800"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
+      "Values": [
+        "9999999",
+        "2054400",
+        "1651200",
+        "1516800",
+        "1228800",
+        "691200",
+        "0"
+      ],
+      "DefaultIndex": 5,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterUpRateLimit",
+      "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us",
+      "Values": [
+        "0",
+        "500",
+        "2000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterDownRateLimit",
+      "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us",
+      "Values": [
+        "20000",
+        "2000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "50",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTALatency",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampFgMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "50",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUMaxFreq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUMinFreq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Values": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUForceRailOn",
+      "Path": "/sys/class/kgsl/kgsl-3d0/force_rail_on",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUForceClkOn",
+      "Path": "/sys/class/kgsl/kgsl-3d0/force_clk_on",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUIdleTimer",
+      "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
+      "Values": [
+        "10000",
+        "80"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHystTriggerCount",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
+      "Values": [
+        "0",
+        "3"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHistMemory",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory",
+      "Values": [
+        "0",
+        "20"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHystLength",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_length",
+      "Values": [
+        "0",
+        "10"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWSampleMs",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/sample_ms",
+      "Values": [
+        "10",
+        "4"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq",
+      "Values": [
+        "7980",
+        "5161",
+        "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "L3LittleClusterMinFreq",
+      "Path": "/sys/class/devfreq/fd90100.qcom,cpu0-cpu-l3-lat/min_freq",
+      "Values": [
+        "1497600000",
+        "1171200000",
+        "300000000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "L3BigClusterMinFreq",
+      "Path": "/sys/class/devfreq/fd90100.qcom,cpu6-cpu-l3-lat/min_freq",
+      "Values": [
+        "1497600000",
+        "1171200000",
+        "300000000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUDDRLatLittleMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-lat/min_freq",
+      "Values": [
+        "7980",
+        "3879",
+        "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUDDRLatBigMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-lat/min_freq",
+      "Values": [
+        "7980",
+        "3879",
+        "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUDDRLatfloorLittleMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/min_freq",
+      "Values": [
+        "7980",
+        "3879",
+        "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUDDRLatfloorBigMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/min_freq",
+      "Values": [
+        "7980",
+        "3879",
+        "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "PowerHALMainState",
+      "Path": "vendor.powerhal.state",
+      "Values": [
+        "SUSTAINED_PERFORMANCE",
+        ""
+      ],
+      "Type": "Property"
+    },
+    {
+      "Name": "PowerHALRenderingState",
+      "Path": "vendor.powerhal.rendering",
+      "Values": [
+        "EXPENSIVE_RENDERING",
+        ""
+      ],
+      "Type": "Property"
+    }
+  ],
+  "Actions": [
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "PowerHALMainState",
+      "Duration": 0,
+      "Value": "SUSTAINED_PERFORMANCE"
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1516800"
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1708800"
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1651200"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1708800"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTAMin",
+      "Duration": 3000,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTALatency",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFgMin",
+      "Duration": 3000,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUMinFreq",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHystTriggerCount",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHystLength",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHistMemory",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "5161"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUDDRLatLittleMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUDDRLatBigMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUDDRLatfloorLittleMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUDDRLatfloorBigMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "L3LittleClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1171200000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "L3BigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1171200000"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPULittleClusterUpRateLimit",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPULittleClusterDownRateLimit",
+      "Duration": 0,
+      "Value": "20000"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPUBigClusterUpRateLimit",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPUBigClusterDownRateLimit",
+      "Duration": 0,
+      "Value": "20000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 3000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 3000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampTAMin",
+      "Duration": 3000,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFgMin",
+      "Duration": 3000,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBWHystTriggerCount",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBWHystLength",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBWHistMemory",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUDDRLatLittleMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUDDRLatBigMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUDDRLatfloorLittleMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUDDRLatfloorBigMinFreq",
+      "Duration": 3000,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUForceClkOn",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUForceRailOn",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUIdleTimer",
+      "Duration": 3000,
+      "Value": "10000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "L3LittleClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1497600000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "L3BigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1497600000"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "FIXED_PERFORMANCE",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "PowerHALRenderingState",
+      "Duration": 0,
+      "Value": "EXPENSIVE_RENDERING"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "UclampTALatency",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUForceRailOn",
+      "Duration": 0,
+      "Value": "1"
+    }
+  ]
+}
