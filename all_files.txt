@@ -67,7 +67,17 @@ vendor/lib64/libqtigefar.so;DISABLE_DEPS
 vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V1-ndk.so
 
 # Audio configs
+vendor/etc/audio/sku_parrot/audio_effects.xml
+vendor/etc/audio/sku_parrot/audio_effects_config.xml
 vendor/etc/audio/sku_parrot/audio_effects_config_stub.xml
+vendor/etc/audio/sku_parrot/audio_policy_configuration.xml
+vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml
+vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml
+vendor/etc/audio/sku_parrot_qssi/audio_policy_configuration.xml
+vendor/etc/audio/sku_parrotlite/audio_effects.xml
+vendor/etc/audio/sku_parrotlite/audio_effects_config.xml
+vendor/etc/audio/sku_parrotlite/mixer_paths_parrot_qrd.xml
+vendor/etc/audio/sku_parrotlite/resourcemanager_parrot_qrd.xml
 vendor/etc/audio_effects.xml
 vendor/etc/audio_ext_spkr.conf
 vendor/etc/audio_policy_volumes.xml
@@ -94,17 +104,7 @@ vendor/etc/models/acd/speech.eai
 vendor/etc/models/acd/speech_nonenpu.eai
 
 # Audio SoundFX
-vendor/lib64/soundfx/libbundleaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libdownmixaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libdynamicsprocessingaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libloudnessenhanceraidl.so;DISABLE_DEPS
 vendor/lib64/soundfx/libldnhncr.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcompostprocbundle.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcomvisualizer.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcomvoiceprocessing.so;DISABLE_DEPS
-vendor/lib64/soundfx/libreverbaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libvisualizeraidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libvolumelistener.so;DISABLE_DEPS
 
 # Bluetooth - from pdx257 72.1.A.2.127
 vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti|26260568432049745737e7e5a4eb38d2260579d4
@@ -676,6 +676,8 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoog
 product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
+product/etc/permissions/privapp-permissions-hotword.xml|db7c58e204be10d6017df56429cf9842d1300dc2
+product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml|f5d1e0305c250c70a4aa5ca043a90582ddc0fe2b
 
 # Input
 system/usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
@@ -750,6 +752,11 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 
 # FM
+system/lib64/vendor.qti.hardware.fm-V1-ndk.so:system_ext/lib64/vendor.qti.hardware.fm-V1-ndk.so
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/etc/vintf/manifest/fm_hci.xml
 vendor/lib64/hw/vendor.qti.hardware.fm-impl.so
 vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
@@ -771,6 +778,7 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/etc/apdr.conf
 vendor/etc/gnss_antenna_info.conf
+vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/vendor.qsap.location.rc
@@ -836,11 +844,6 @@ vendor/etc/public.libraries.txt
 # Capsense
 vendor/bin/capsense_reset
 
-# Touch firmware (recovery)
-vendor/firmware/ILITEK_FW_TXD:recovery/root/vendor/firmware/ILITEK_FW_TXD
-vendor/firmware/boe_chipone_firmware.bin:recovery/root/vendor/firmware/boe_chipone_firmware.bin
-vendor/firmware/csot_chipone_firmware.bin:recovery/root/vendor/firmware/csot_chipone_firmware.bin
-
 # Graphics (Adreno)
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
@@ -892,6 +895,26 @@ vendor/lib64/libqtiidentitycredential.so
 # Init
 vendor/etc/init/hw/init.mmi.charge_only.rc
 vendor/etc/init/init.qti.media.rc
+vendor/etc/init/hw/init.mmi.chipset.rc
+vendor/etc/init/hw/init.mmi.overlay.rc
+vendor/bin/init.class_main.sh
+vendor/bin/init.kernel.post_boot-parrot.sh
+vendor/bin/init.kernel.post_boot-ravelin.sh
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.mmi.boot.sh
+vendor/bin/init.mmi.touch.sh
+vendor/bin/init.oem.fingerprint2.sh
+vendor/bin/init.oem.hw.sh
+vendor/bin/init.qcom.class_core.sh
+vendor/bin/init.qcom.early_boot.sh
+vendor/bin/init.qcom.post_boot.sh
+vendor/bin/init.qcom.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/init.qti.keymaster.sh
+vendor/bin/init.qti.qcv.sh
+vendor/bin/init.qti.write.sh
+vendor/bin/system_dlkm_modprobe.sh
+vendor/bin/vendor_modprobe.sh
 
 # Kernel
 vendor/etc/init/hw/init.qti.kernel.rc
@@ -1693,6 +1716,9 @@ vendor/lib64/libtrustedapploader.so
 # Wi-Fi
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/vendor_cmd.xml
 
 # Vibrator
