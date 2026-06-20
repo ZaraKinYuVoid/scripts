@@ -11,6 +11,7 @@ git add st/opensource/driver
 git commit -s -m "Add 'st/opensource/driver/' from TAG MMI-W1WAA36.48-12-40"
 
 # NXP NFC
+rm -rf nxp/opensource/driver
 git clone https://github.com/MotorolaMobilityLLC/vendor-nxp-opensource-driver -b MMI-W1WAA36.48-12-40 nxp/opensource/driver
 rm -rf nxp/opensource/driver/.git
 git add nxp/opensource/driver
