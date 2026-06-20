@@ -1,3 +1,21 @@
+# Motorola
+git clone https://github.com/MotorolaMobilityLLC/motorola-kernel-modules -b MMI-W1WAA36.48-12-40 motorola
+rm -rf motorola/.git
+git add motorola
+git commit -s -m "Add 'motorola/' from TAG MMI-W1WAA36.48-12-40"
+
+# ST NFC
+git clone https://github.com/MotorolaMobilityLLC/vendor-st-opensource-driver -b MMI-W1WAA36.48-12-40 st/opensource/driver
+rm -rf st/opensource/driver/.git
+git add st/opensource/driver
+git commit -s -m "Add 'st/opensource/driver/' from TAG MMI-W1WAA36.48-12-40"
+
+# NXP NFC
+git clone https://github.com/MotorolaMobilityLLC/vendor-nxp-opensource-driver -b MMI-W1WAA36.48-12-40 nxp/opensource/driver
+rm -rf nxp/opensource/driver/.git
+git add nxp/opensource/driver
+git commit -s -m "Update 'nxp/opensource/driver/' from TAG MMI-W1WAA36.48-12-40"
+
 # audio-kernel
 rm -rf qcom/opensource/audio-kernel
 git clone https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-audio-kernel -b MMI-W1WAA36.48-12-40 qcom/opensource/audio-kernel
