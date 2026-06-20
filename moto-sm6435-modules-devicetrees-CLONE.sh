@@ -101,13 +101,6 @@ rm -rf qcom/opensource/mmrm-driver/.git
 git add qcom/opensource/mmrm-driver
 git commit -s -m "Update 'qcom/opensource/mmrm-driver/' from TAG MMI-W1WAA36.48-12-40"
 
-# mm-sys-kernel
-rm -rf qcom/opensource/mm-sys-kernel
-git clone https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-mm-sys-kernel -b MMI-W1WAA36.48-12-40 qcom/opensource/mm-sys-kernel
-rm -rf qcom/opensource/mm-sys-kernel/.git
-git add qcom/opensource/mm-sys-kernel
-git commit -s -m "Update 'qcom/opensource/mm-sys-kernel/' from TAG MMI-W1WAA36.48-12-40"
-
 # securemsm-kernel
 rm -rf qcom/opensource/securemsm-kernel
 git clone https://github.com/MotorolaMobilityLLC/vendor-qcom-opensource-securemsm-kernel -b MMI-W1WAA36.48-12-40 qcom/opensource/securemsm-kernel
