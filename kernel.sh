@@ -1,7 +1,7 @@
 mkdir toolchains
 cd toolchains
-URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-14.0.0_r33/clang-r510928.tar.gz"
-echo "[+] Fetching Clang 18 ..."
+URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f60b8b55282f002f594f452ce22dfd6cf1fd7e3c/clang-r596125.tar.gz"
+echo "[+] Fetching Clang 22 ..."
 wget -q -O clang.tar.gz $URL
 tar -xf clang.tar.gz && rm clang.tar.gz && cd ..
 export PATH="$(pwd)/toolchains/bin:${PATH}"
@@ -24,5 +24,5 @@ export OBJDUMP="${TOOLCHAIN_PATH}/llvm-objdump"
 export READELF="${TOOLCHAIN_PATH}/llvm-readelf"
 export HOSTCC="${TOOLCHAIN_PATH}/clang"
 export HOSTCXX="${TOOLCHAIN_PATH}/clang++"
-make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y gki_defconfig vendor/parrot_perf.config vendor/parrot_consolidate.config vendor/ext_config/debug-parrot.config vendor/ext_config/moto-parrot.config vendor/ext_config/moto-parrot-mumba.config
+make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y gki_defconfig vendor/parrot_perf.config vendor/ext_config/moto-parrot.config vendor/ext_config/moto-parrot-mumba.config
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y -j$(nproc --all)
