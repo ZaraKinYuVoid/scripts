@@ -1,20 +1,21 @@
 #!/bin/bash
 
-mkdir -p LineageOS
-cd LineageOS
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.2--git-lfs
+mkdir -p PixelOS
+cd PixelOS
+repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 --git-lfs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
+
+rm -rf hardware/motorola
+rm -rf device/motorola/mumba-kernel
 rm -rf device/motorola/mumba
 rm -rf vendor/motorola/mumba
-rm -rf device/motorola/mumba-kernel
-rm -rf hardware/motorola
 
-git clone https://github.com/ZaraKinYuVoid/device_motorola_mumba device/motorola/mumba
-git clone https://github.com/ZaraKinYuVoid/vendor_motorola_mumba vendor/motorola/mumba
-git clone https://github.com/motorola-sm6435/android_device_motorola_mumba-kernel device/motorola/mumba-kernel
+git clone https://github.com/ZaraKinYuVoid/android_device_motorola_mumba -b sixteen-qpr2 device/motorola/mumba
+git clone https://github.com/ZaraKinYuVoid/android_vendor_motorola_mumba -b sixteen-qpr2 vendor/motorola/mumba
+git clone https://github.com/ZaraKinYuVoid/android_device_motorola_mumba-kernel -b main device/motorola/mumba-kernel
 git clone https://github.com/LineageOS/android_hardware_motorola -b lineage-23.2 hardware/motorola
 
-. build/envsetup.sh
-lunch lineage_mumba-bp4a-userdebug
-mka bacon -j$(nproc --all)
+source build/envsetup.sh
+breakfast mumba
+m pixelos
