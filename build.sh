@@ -98,29 +98,23 @@ SYSTEM_KERNEL_MODULES := $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/motorola/sm6435-modules
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
-    qcom/opensource/mm-drivers/msm_ext_display \
-    qcom/opensource/mm-drivers/sync_fence \
+    qcom/opensource/mm-drivers\
+    qcom/opensource/mm-drivers \
     qcom/opensource/audio-kernel \
     qcom/opensource/securemsm-kernel \
     qcom/opensource/synx-kernel \
     qcom/opensource/camera-kernel \
-    qcom/opensource/data-kernel/drivers/smem-mailbox \
-    qcom/opensource/datarmnet-ext/mem \
-    qcom/opensource/dataipa/drivers/platform/msm \
-    qcom/opensource/datarmnet/core \
-    qcom/opensource/datarmnet-ext/aps \
-    qcom/opensource/datarmnet-ext/offload \
-    qcom/opensource/datarmnet-ext/perf \
-    qcom/opensource/datarmnet-ext/perf_tether \
-    qcom/opensource/datarmnet-ext/sch \
-    qcom/opensource/datarmnet-ext/shs \
-    qcom/opensource/datarmnet-ext/wlan \
-    qcom/opensource/display-drivers/msm \
+    qcom/opensource/data-kernel\
+    qcom/opensource/datarmnet-ext \
+    qcom/opensource/dataipa \
+    qcom/opensource/datarmnet \
+    qcom/opensource/datarmnet-ext \
+    qcom/opensource/display-drivers \
     qcom/opensource/dsp-kernel \
     qcom/opensource/graphics-kernel \
     qcom/opensource/video-driver \
     qcom/opensource/wlan/platform \
-    qcom/opensource/wlan/qcacld-3.0/.adrastea \
+    qcom/opensource/wlan/qcacld-3.0/ \
     qcom/opensource/bt-kernel \
     nxp/opensource/driver \
     st/opensource/driver \
@@ -165,3 +159,59 @@ TARGET_KERNEL_EXT_MODULES += \
     motorola/drivers/input/touchscreen/ilitek_v4_mmi \
     motorola/drivers/input/misc/anc_fps_mmi \
     motorola/drivers/wlan_antenna
+
+
+make O=out \
+CC=clang \
+HOSTCC=clang \
+HOSTCXX=clang++ \
+LLVM=1 \
+LLVM_IAS=1 \
+ARCH=arm64 \
+M=
+modules -j$(nproc)
+
+
+
+COMMON_ARGS='O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j'"$(nproc)"
+
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_swap
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/mmi_relay
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_reboot_reason
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/mmi_annotate
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_f_usbnet
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/mmi_info
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_mm
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/mmi_sys_temp
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_mmap_fault
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_netopt/con_dfpar
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_binder
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/mmi_charger
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/mmi_stow
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/moto_sched
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/watchdogtest
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/sx937x
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/stk501xx
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/utag
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/qpnp_adaptive_charge
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/bm_adsp_ulog
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/qti_glink_charger
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/bq27426_fg_mmi
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/power/sgm4154x_charger_lite
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/regulator/dio8015
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/regulator/wl2864c
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/regulator/wl2866d
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/regulator/slg5bm43670
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/misc/awinic/sarsensor
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/fm
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/backlight/ktd3136
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/backlight/aw99703
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/nfc/st21nfc
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/sensors
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/ese/st54x
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/ese/st54spi_gpio
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/input/touchscreen/chipone_tddi_v3_mmi
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/input/touchscreen/ilitek_v4_mmi
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/input/misc/anc_fps_mmi
+make O=out CC=clang HOSTCC=clang HOSTCXX=clang++ LLVM=1 LLVM_IAS=1 ARCH=arm64 modules -j$(nproc) M=motorola/drivers/wlan_antenna
+
