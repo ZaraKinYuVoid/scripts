@@ -1,9 +1,15 @@
-mkdir toolchains
+mkdir -p toolchains
 cd toolchains
 URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-14.0.0_r33/clang-r510928.tar.gz"
-echo "[+] Fetching Clang 18 ..."
-wget -q -O clang.tar.gz $URL
-tar -xf clang.tar.gz && rm clang.tar.gz && cd ..
+aria2c \
+    -x16 \
+    -s16 \
+    -k1M \
+    -o clang.tar.gz \
+    "$URL"
+tar -xf clang.tar.gz
+rm clang.tar.gz
+cd ..
 export PATH="$(pwd)/toolchains/bin:${PATH}"
 export TOOLCHAIN_PATH="$(pwd)/bin"
 export LD_LIBRARY_PATH="$(pwd)/lib:${LD_LIBRARY_PATH}"
