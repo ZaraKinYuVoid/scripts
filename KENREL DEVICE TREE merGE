@@ -1,0 +1,64 @@
+cat << 'EOF' > sync.sh
+#!/bin/bash
+
+TAG="MMI-W1WAA36.48-12-40"
+BASE_URL="https://github.com/MotorolaMobilityLLC"
+SIGN_OFF="Signed-off-by: zaraknyu <razenxizu@gmail.com>"
+
+COMPONENTS=(
+    "display:display"
+    "dsp:dsp"
+    "eSE:ese"
+    "graphics:graphics"
+    "mm:mm"
+    "mm-sys:mm-sys"
+    "mmrm:mmrm"
+    "nfc:nfc"
+    "synx:synx"
+    "video:video"
+    "wlan:wlan"
+    "audio:audio"
+    "camera:camera"
+    "bt:bt"
+    "data:data"
+)
+
+echo "Starting subtree updates/merges for tag: $TAG..."
+echo "----------------------------------------"
+
+for item in "${COMPONENTS[@]}"; do
+    LOCAL_DIR="${item%%:*}"
+    REPO_NAME="${item##*:}"
+
+    TARGET_PATH="qcom/$LOCAL_DIR"
+    REPO_URL="${BASE_URL}/kernel-${REPO_NAME}-devicetree"
+    COMMIT_MSG="Merge tag '$TAG' into $TARGET_PATH
+
+$SIGN_OFF"
+
+    echo "Pulling updates from $REPO_URL ($TAG) into $TARGET_PATH..."
+
+    if git fetch "$REPO_URL" "$TAG"; then
+        if git merge FETCH_HEAD -s subtree -m "$COMMIT_MSG" --allow-unrelated-histories; then
+            echo "Successfully merged updates into $LOCAL_DIR!"
+        else
+            echo ""
+            echo "❌ CONFLICT DETECTED in component: $LOCAL_DIR"
+            echo "The loop has stopped. Please resolve the conflicts manually."
+            echo "Steps to fix:"
+            echo "  1. Run 'git status' to view conflicted files."
+            echo "  2. Fix the conflicts, then run 'git add <files>'."
+            echo "  3. Run 'git commit' to complete this merge phase."
+            echo "  4. Re-run './sync.sh' to resume the remaining components."
+            echo ""
+            exit 1
+        fi
+    else
+        echo "❌ FETCH FAILED for $REPO_URL. Halting execution."
+        exit 1
+    fi
+    echo "----------------------------------------"
+done
+
+echo "🎉 All components updated and merged successfully without unhandled conflicts!"
+EOF
