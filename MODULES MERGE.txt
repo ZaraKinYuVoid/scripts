@@ -1,0 +1,56 @@
+TAG="MMI-W1WAA36.48-12-40"
+BASE_URL="https://github.com/MotorolaMobilityLLC"
+
+REPOS=(
+    "nxp/opensource/driver:vendor-nxp-opensource-driver"
+    "qcom/opensource/audio-kernel:vendor-qcom-opensource-audio-kernel"
+    "qcom/opensource/bt-kernel:vendor-qcom-opensource-bt-kernel"
+    "qcom/opensource/camera-kernel:vendor-qcom-opensource-camera-kernel"
+    "qcom/opensource/data-kernel:vendor-qcom-opensource-data-kernel"
+    "qcom/opensource/dataipa:kernel-msm-techpack-dataipa"
+    "qcom/opensource/datarmnet:vendor-qcom-opensource-datarmnet"
+    "qcom/opensource/datarmnet-ext:vendor-qcom-opensource-datarmnet-ext"
+    "qcom/opensource/display-drivers:kernel-msm-5.4-techpack-display"
+    "qcom/opensource/dsp-kernel:vendor-qcom-opensource-dsp-kernel"
+    "qcom/opensource/graphics-kernel:vendor-qcom-opensource-graphics-kernel"
+    "qcom/opensource/mm-drivers:vendor-qcom-opensource-mm-drivers"
+    "qcom/opensource/mmrm-driver:vendor-qcom-opensource-mmrm-driver"
+    "qcom/opensource/securemsm-kernel:vendor-qcom-opensource-securemsm-kernel"
+    "qcom/opensource/spu-kernel:vendor-qcom-opensource-spu-kernel"
+    "qcom/opensource/synx-kernel:vendor-qcom-opensource-synx-kernel"
+    "qcom/opensource/video-driver:vendor-qcom-opensource-video-driver"
+    "qcom/opensource/wlan/fw-api:vendor-qcom-opensource-wlan-fw-api"
+    "qcom/opensource/wlan/platform:vendor-qcom-opensource-wlan-platform"
+    "qcom/opensource/wlan/qca-wifi-host-cmn:vendor-qcom-opensource-wlan-qca-wifi-host-cmn"
+    "qcom/opensource/wlan/qcacld-3.0:vendor-qcom-opensource-wlan-qcacld-3.0"
+)
+
+# Enable tracking of sign-offs for the merges
+export GIT_COMMITTER_NAME="zaraknyu"
+export GIT_COMMITTER_EMAIL="razenxizu@gmail.com"
+
+for repo in "${REPOS[@]}"; do
+    LOCAL_PATH="${repo%%:*}"
+    REMOTE_NAME="${repo##*:}"
+    REMOTE_URL="$BASE_URL/$REMOTE_NAME.git"
+    
+    echo "🔄 Merging upstream updates into $LOCAL_PATH..."
+    
+    # Check if the subdirectory exists; if not, do an initial subtree add
+    if [ ! -d "$LOCAL_PATH" ]; then
+        echo "📁 Path doesn't exist. Initializing subtree add for $LOCAL_PATH..."
+        git subtree add --prefix="$LOCAL_PATH" "$REMOTE_URL" "$TAG" --squash -m "Merge '$LOCAL_PATH/' from TAG $TAG"
+    else
+        # Perform the actual subtree merge pull
+        git subtree pull --prefix="$LOCAL_PATH" "$REMOTE_URL" "$TAG" --squash -m "Merge '$LOCAL_PATH/' from TAG $TAG"
+    fi
+    
+    if [ $? -eq 0 ]; then
+        echo "✅ Successfully merged: $LOCAL_PATH"
+    else
+        echo "❌ CONFLICT OR FAILURE in: $LOCAL_PATH"
+        echo "Fix manual conflicts, commit, and then re-run the loop."
+        break
+    fi
+    echo "--------------------------------------------------------"
+done
